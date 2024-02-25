@@ -1,13 +1,19 @@
-# Sample Hardhat Project
+# Multi Signature Smart Wallet
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Proxy smart contracts for multi signature smart wallet. 
 
-Try running some of the following tasks:
+Run and deploy using:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+pnpm exec hardhat run --network mumbai scripts/deploy.js                                          
+
+
+```
+
+Verify on explorer using:
+
+```shell
+pnpm exec hardhat verify --constructor-args arguments.js SMART_CONTRACT_ADDRESS                                         
+
+
 ```
